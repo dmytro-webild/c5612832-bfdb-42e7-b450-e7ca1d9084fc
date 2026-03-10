@@ -51,15 +51,15 @@ export default function LandingPage() {
           testimonials={[
             {
               name: "Guest Review",              handle: "Google Reviews",              testimonial: "Exceptional dining experience — the atmosphere is absolutely cinematic.",              rating: 5,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=2tuy65"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=2tuy65&_wi=1"
             },
             {
               name: "Diner",              handle: "TripAdvisor",              testimonial: "Food, cocktails, service and atmosphere were all first class.",              rating: 5,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=heki7c"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=heki7c&_wi=1"
             },
             {
               name: "London Guest",              handle: "Review Platform",              testimonial: "One of the most beautiful restaurants in London. Pure magic.",              rating: 5,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=nmr9xk"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=nmr9xk&_wi=1"
             }
           ]}
           buttons={[
@@ -134,22 +134,22 @@ export default function LandingPage() {
         <TestimonialCardTwelve
           testimonials={[
             {
-              id: "1",              name: "Sarah Johnson",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=2tuy65"
+              id: "1",              name: "Sarah Johnson",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=2tuy65&_wi=2"
             },
             {
-              id: "2",              name: "Michael Chen",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=heki7c"
+              id: "2",              name: "Michael Chen",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=heki7c&_wi=2"
             },
             {
-              id: "3",              name: "Emma Rodriguez",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=nmr9xk"
+              id: "3",              name: "Emma Rodriguez",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=nmr9xk&_wi=2"
             },
             {
               id: "4",              name: "James Wilson",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=9c5ffo"
             },
             {
-              id: "5",              name: "Sophie Laurent",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=2tuy65"
+              id: "5",              name: "Sophie Laurent",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=2tuy65&_wi=3"
             },
             {
-              id: "6",              name: "David Park",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=heki7c"
+              id: "6",              name: "David Park",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=heki7c&_wi=3"
             }
           ]}
           cardTitle="Over 8,000 guests have experienced Tattu's unforgettable culinary theatre"
