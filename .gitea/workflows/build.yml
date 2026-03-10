@@ -1,0 +1,46 @@
+name: Code Check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '24'
+
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        id: cache-node
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            node-modules-
+
+      - name: Install dependencies
+        if: steps.cache-node.outputs.cache-hit != 'true'
+        run: npm ci --prefer-offline --no-audit
+        timeout-minutes: 5
+
+      - name: TypeScript check
+        run: npm run typecheck
+        timeout-minutes: 3
+
+      - name: ESLint check
+        run: npm run lint
+        timeout-minutes: 3
+
+      - name: Upload build log on failure
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-log
+          path: build.log
